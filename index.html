@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santé Mentale</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <h1>Bienvenue à Santé Mentale</h1>
@@ -16,23 +14,65 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#feedback">Feedback</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#emotions">Emotions</a></li>
+                <li><a href="#testList">Test List</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="banner">
             <h2>Votre santé mentale, notre priorité</h2>
+            <img src="assets/banner.jpg" alt="Mental health banner">
         </section>
         <section id="discover">
             <p>Discover more about dyslexia or whatever disorder you have. Hurry up, you got one free trial!</p>
+            <img src="assets/discover.jpg" alt="Discover more">
             <button id="startButton">START</button>
+        </section>
+        <section id="emotions">
+            <h3>Troubling Emotions</h3>
+            <p>Explore resources and articles to help you manage and understand troubling emotions.</p>
+            <img src="assets/troubling-emotions.png" alt="Icons representing troubling emotions with a sad and happy face">
+            <a href="#" class="read-more">Read More &rarr;</a>
+        </section>
+        <section id="testList">
+            <h3>Test List</h3>
+            <p>Explore the tests available to identify your mental health status.</p>
+            <img src="assets/test-list.png" alt="Test List">
+        </section>
+        <section id="services">
+            <h3>Santé Mentale Services</h3>
+            <p>Ensuring your health is in good hands with over 80 reliable tests.</p>
+            <p>Professionals in more than 100 countries with a 98% customer satisfaction rate.</p>
+            <p>Reliable mental health information through an extensive network of doctors.</p>
+            <p>Up to 70% cheaper prices compared to other online providers.</p>
+            <p>A 100% free app to help you find the right test.</p>
+            <p>Over 900 therapists with various specialties available.</p>
+            <button id="seeTestList">See the test list</button>
         </section>
         <section id="signIn">
             <button>Sign in</button>
             <button>Sign up</button>
         </section>
+        <section id="login">
+            <h2>Log In Here</h2>
+            <p>View all of your reports and scheduled health exams in one location</p>
+            <form id="loginForm">
+                <label for="emailOrMobile">Mobile / Email ID</label>
+                <input type="text" id="emailOrMobile" name="emailOrMobile" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="login-options">
+                    <a href="#" id="forgotPassword">Forget Password?</a> | <a href="#" id="register">Register</a>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <button id="listTests">List of Tests Available</button>
+            <button id="makeSchedule">Make a Schedule</button>
+        </section>
         <section id="services">
             <h3>Nos Services</h3>
+            <img src="assets/services.jpg" alt="Services image">
             <p>Explorez les différents services de santé mentale que nous proposons.</p>
         </section>
         <section id="feedback">
@@ -59,5 +99,4 @@
     </footer>
     <script src="scripts.js"></script>
 </body>
-
 </html>
