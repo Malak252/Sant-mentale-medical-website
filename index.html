@@ -1,102 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santé Mentale</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    /* Header styles */
+    header {
+        background-color: #e0e2f5;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #e0e2f5;
+    }
+</style>
+
+</html>
 <body>
     <header>
-        <h1>Bienvenue à Santé Mentale</h1>
         <nav>
             <ul>
+                <li><a href="#Home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#feedback">Feedback</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#emotions">Emotions</a></li>
-                <li><a href="#testList">Test List</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ClinicalTest">Clinical Test</a></li>
+                <li><a href="#KnowledgeCenter">Knowledge Center</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="banner">
-            <h2>Votre santé mentale, notre priorité</h2>
-            <img src="assets/banner.jpg" alt="Mental health banner">
-        </section>
-        <section id="discover">
-            <p>Discover more about dyslexia or whatever disorder you have. Hurry up, you got one free trial!</p>
-            <img src="assets/discover.jpg" alt="Discover more">
-            <button id="startButton">START</button>
-        </section>
-        <section id="emotions">
-            <h3>Troubling Emotions</h3>
-            <p>Explore resources and articles to help you manage and understand troubling emotions.</p>
-            <img src="assets/troubling-emotions.png" alt="Icons representing troubling emotions with a sad and happy face">
-            <a href="#" class="read-more">Read More &rarr;</a>
-        </section>
-        <section id="testList">
-            <h3>Test List</h3>
-            <p>Explore the tests available to identify your mental health status.</p>
-            <img src="assets/test-list.png" alt="Test List">
-        </section>
-        <section id="services">
-            <h3>Santé Mentale Services</h3>
-            <p>Ensuring your health is in good hands with over 80 reliable tests.</p>
-            <p>Professionals in more than 100 countries with a 98% customer satisfaction rate.</p>
-            <p>Reliable mental health information through an extensive network of doctors.</p>
-            <p>Up to 70% cheaper prices compared to other online providers.</p>
-            <p>A 100% free app to help you find the right test.</p>
-            <p>Over 900 therapists with various specialties available.</p>
-            <button id="seeTestList">See the test list</button>
-        </section>
-        <section id="signIn">
-            <button>Sign in</button>
-            <button>Sign up</button>
-        </section>
-        <section id="login">
-            <h2>Log In Here</h2>
-            <p>View all of your reports and scheduled health exams in one location</p>
-            <form id="loginForm">
-                <label for="emailOrMobile">Mobile / Email ID</label>
-                <input type="text" id="emailOrMobile" name="emailOrMobile" required>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                <div class="login-options">
-                    <a href="#" id="forgotPassword">Forget Password?</a> | <a href="#" id="register">Register</a>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            <button id="listTests">List of Tests Available</button>
-            <button id="makeSchedule">Make a Schedule</button>
-        </section>
-        <section id="services">
-            <h3>Nos Services</h3>
-            <img src="assets/services.jpg" alt="Services image">
-            <p>Explorez les différents services de santé mentale que nous proposons.</p>
-        </section>
-        <section id="feedback">
-            <h3>Retours de nos patients</h3>
-            <p>Découvrez ce que disent nos patients sur nos services.</p>
-        </section>
-        <section id="contact">
-            <h3>Contactez-nous</h3>
-            <form id="contactForm">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
+
+        <div class="container"> 
+            <img src="assets/intro1.png" alt="Image 1" class="image image1">
+            <img src="assets/intro2.png" alt="Image 2" class="image image2">
+            <img src="assets/intro3.png" alt="Image 3" class="image image3">
+            <img src="assets/intro4.png" alt="Image 4" class="image image4">
+            <img src="assets/WELCOME TO.png" alt="Image 5" class="image image5">>
+            <img src="assets/banner.jpg" alt="Image 6" class="image image6">>
+            <img src="assets/pureheart.png" alt="Image 7" class="image image7">>
+        </div>
+
+        <div class="container container2"> 
+            <img src="assets/login.png" alt="Image 8" class="image image8">
+            <img src="assets/medical-test.png" alt="Image 9" class="image image9">
+            <img src="assets/services.jpg" alt="Image 10" class="image image10">
+            <img src="assets/types.png" alt="Image 11" class="image image11">
+            <img src="assets/leftarrow.png" alt="Image 12" class="image image12">
+            <img src="assets/rightarrow.png" alt="Image 13" class="image image13">
+            <img src="assets/get-help.png" alt="Image 14" class="image image14">
+            <img src="assets/brain-hug.png" alt="Image 15" class="image image15">
+            <img src="assets/motivation.png" alt="Image 16" class="image image16">
+            <img src="assets/besthands.png" alt="Image 17" class="image image17">
+            <img src="assets/greyfont.png" alt="Image 18" class="image image18">
+            <img src="assets/percentage.png" alt="Image 19" class="image image19">
+            <img src="assets/rectangle.png" alt="Image 20" class="image image20">
+            <img src="assets/test-list.png" alt="Image 21" class="image image21">
+        </div>
+
+        <div class="container container3">
+            <img src="assets/feedback.png" alt="Image 22" class="image image22">
+            <img src="assets/starts.png" alt="Image 23" class="image image23">
+            <img src="assets/hearts.png" alt="Image 24" class="image image24">
+            <img src="assets/rainbow-arcs.png" alt="Image 25" class="image image25">
+            <img src="assets/Testimonial.png" alt="image 26" class="image image26">
+        </div>
+
+        <div class="container container4">
+            <img src="assets/company1.png" alt="Image 27" class="image image27">
+            <img src="assets/company2.png" alt="Image 28" class="image image28">
+            <img src="assets/features1.png" alt="Image 29" class="image image29">
+            <img src="assets/features2.png" alt="Image 30" class="image image30">
+            <img src="assets/legal1.png" alt="Image 31" class="image image31">
+            <img src="assets/legal2.png" alt="Image 32" class="image image32">
+            <img src="assets/fee.png" alt="Image 33" class="image image33">
+            <img src="assets/resources1.png" alt="Image 34" class="image image34">
+            <img src="assets/resources2.png" alt="Image 35" class="image image35">
+            <img src="assets/getintouch1.png" alt="Image 36" class="image image36">
+            <img src="assets/getintouch2.png" alt="Image 37" class="image image37">
+            <img src="assets/facebook.png" alt="Image 38" class="image image38">
+            <img src="assets/instgram.png" alt="Image 39" class="image image39">
+            <img src="assets/twitter.png" alt="Image 40" class="image image40">
+        </div>
+
     </main>
     <footer>
-        <p>Working Hours: Monday - Sunday: 10 am - 9 pm (All holidays & school vacations)</p>
-        <p>Location: Happy Day Care, 150 Sutherland Rd, Brighton, MA</p>
-        <p>Contact: Get involved! Call us at 617-400-3333</p>
-        <p>Follow: [Social Media Icons]</p>
-        <p>&copy; 2024 Santé Mentale. Tous droits réservés.</p>
+        <p>Copyright © 2022</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
-</html>
